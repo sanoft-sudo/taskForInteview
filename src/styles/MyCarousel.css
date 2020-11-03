@@ -1,0 +1,48 @@
+.carousel__item{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+
+.carousel__item--imageContainer{
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.carousel__item--imageContainer >img{
+    max-width: 350px !important;
+    height: 175px !important;
+}
+.carousel__item--title, .carousel__item--description{
+    color: #fff;
+}
+.carousel__item--info > h3, h2{
+    color: #fff;
+}
+
+.owl-carousel{
+    position: relative;
+}
+.owl-prev{
+    position: absolute;
+    top: 37%;
+    left:2%;
+    z-index: 1;
+    color: #fff;
+    font-weight: 900;
+    font-size: large;
+
+}
+.owl-next{
+    position: absolute;
+    top: 37%;
+    right:2%;
+    z-index: 1;
+    color: #fff;
+    font-weight: 900;
+    font-size: large;
+
+}
